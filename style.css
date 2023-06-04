@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: "Poppins" , sans-serif;
+}
+
+::selection {
+    background: #1D9BF0;
+}
+
+body {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px 20px 40px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.titles i {
+    font-size: 28px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.continue {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 80px;
+    color: #000;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.continue:hover {
+    background-color: #dfdfdf;
+}
+
+.continue i {
+    font-size: 26px;
+}
+
+.continue span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.or {
+    color: #eee;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+}
+
+.or::before {
+    content: "";
+    position: absolute;
+    background-color: #333;
+    height: 1px;
+    width: 140px;
+    left: 0 ;
+    top: 10px;
+}
+
+
+.or::after {
+    content: "";
+    position: absolute;
+    background-color: #333;
+    height: 1px;
+    width: 140px;
+    right: 0;
+    top: 10px;
+}
+
+
+.input input {
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #999;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.button .second {
+    border: 1px solid #333;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.button a:hover {
+    background-color: #dfdfdf;
+}
+
+.button .second:hover {
+    background-color: transparent;
+}
+
+.dont {
+    text-align: center;
+    transition: 0.5s;
+}
+
+.dont a {
+    color: #1D9BF0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.dont:hover a {
+    text-decoration: underline;
+}
